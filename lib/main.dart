@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertut/question.dart';
+import 'package:fluttertut/answer.dart';
 
 
 void main() => runApp(MyApp());
@@ -30,12 +32,11 @@ class MyApp extends StatefulWidget {
         ),
         body: Column(
           children: <Widget>[
-            Text(questions[questionIndex]),
+            Questions(questions[questionIndex]),
             Text("Answer dena hai"),
-            RaisedButton(child: Text('Answer1'),onPressed: answerquestions,),
-            RaisedButton(child: Text('Answer2'),onPressed: answerquestions,),
-            RaisedButton(child: Text('Answer3'),onPressed: answerquestions,),
-
+             Answer(answerquestions),
+             Answer(answerquestions),
+             Answer(answerquestions)
           ],
         )
 
